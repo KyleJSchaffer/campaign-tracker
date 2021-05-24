@@ -1,0 +1,25 @@
+label{
+    float: right
+}
+
+.formDisplay{
+    margin-top:10px
+}
+
+.inputContainer{
+    margin-top: 10px;
+}
+
+.loginLink{
+    font-size: 75%
+}
+
+.registerLink{
+    font-size: 75%
+}
+
+.errorMessage{
+    text-align: center;
+    margin-top: 20px
+}
+

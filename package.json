@@ -1,0 +1,21 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd api-server && nodemon server.js\" \"node server.js\"",
+    "sessions": "concurrently \"cd api-server && nodemon server.js\" \"cd session-tracker && npm start\"",
+    "journey": "concurrently \"cd api-server && nodemon server.js\" \"cd journey-tracker && npm start\"",
+    "login": "concurrently \"cd api-server && nodemon server.js\" \"cd login && npm start\"",
+    "build-dev": "cd session-tracker && npm run build-dev && cd ../journey-tracker && npm run build-dev && cd ../login && npm run build-dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  }
+}

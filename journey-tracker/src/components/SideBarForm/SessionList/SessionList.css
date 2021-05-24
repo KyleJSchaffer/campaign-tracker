@@ -1,0 +1,14 @@
+.dropdownContent{
+    max-height: 200px;
+    overflow: scroll;
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    top: 40px;
+    left: 0px;
+}
+
+.linkList{
+    list-style-type: none;
+    padding: 0px;
+}
